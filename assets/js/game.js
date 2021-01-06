@@ -19,7 +19,7 @@ var startGame = function() {
     if (playerInfo.health > 0) {
       // let player know what round they are in, remember that arrays start at 0 so it needs to have 1 added to it
       window.alert('Welcome to Robot Gladiators! Round ' + (i + 1));
-
+      debugger;
       // pick new enemy to fight based on the index of the enemy.names array
       var pickedEnemyObj = enemyInfo[i];
 
@@ -172,7 +172,7 @@ var playerInfo = {
     this.health = 100;
     this.money = 10;
     this.attack = 10;
-  }
+  },
   refillHealth: function() {
     if (this.money >= 7) {
       window.alert("Refilling player's health by 20 for 7 dollars.");
@@ -182,7 +182,7 @@ var playerInfo = {
     else {
       window.alert("You don't have enough money!");
     }
-  }
+  },
   upgradeAttack: function() {
     if (this.money >= 5) {
       window.alert("Upgrading player's attack by 3 for 5 dollars.");
